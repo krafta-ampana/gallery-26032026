@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+		
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="0">
+		<meta name="google" content="notranslate">
+
+  
+  <title>Gallery - 26032026</title>
+  
+	<meta property="og:locale" content="id_ID" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Gallery - 26032026" />
+	<meta property="og:description" content="Gallery - 26032026" />
+	<meta property="og:image" content="https://krafta-ampana.github.io/gallery-26032026/og-images.jpg" />
+	<meta property="og:image:width" content="371" />
+	<meta property="og:image:height" content="392" />
+	<meta property="og:url" content="https://krafta-ampana.github.io/gallery-26032026" />
+	<meta property="og:site_name" content="krafta | Gakkery Foto Digital" />
+	<meta property="fb:app_id" content="771033985084304" />
+
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lusitana:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      font-family: "Google Sans", sans-serif;
+    }
+
+    i {
+      font-family: "Lusitana", serif;
+    }
+
+
+    /* ── Masonry Layout ── */
+    .masonry {
+      column-gap: 0.75rem;
+    }
+
+    @media (max-width: 639px) {
+      .masonry {
+        columns: 2;
+      }
+    }
+
+    @media (min-width: 640px) and (max-width: 1023px) {
+      .masonry {
+        columns: 3;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .masonry {
+        columns: 4;
+      }
+    }
+
+    /* Foto landscape di mobile: span full width */
+    @media (max-width: 639px) {
+      .photo-item.landscape {
+        column-span: all;
+      }
+    }
+
+    .photo-item {
+      break-inside: avoid;
+      margin-bottom: 0.75rem;
+      display: inline-block;
+      width: 100%;
+    }
+
+    /* ── Hero ── */
+    .hero-overlay {
+      background: linear-gradient(to bottom,
+          rgba(0, 0, 0, 0.25) 0%,
+          rgba(0, 0, 0, 0.55) 100%);
+    }
+
+    /* ── Lightbox ── */
+    #lightbox {
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    #lightbox.hidden {
+      display: none;
+    }
+
+    /* ── Smooth fade-in for lazy-loaded items ── */
+    .photo-item {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .photo-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── Custom scrollbar (optional, webkit only) ── */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f5f5f5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 3px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-stone-50 text-stone-800 font-sans antialiased"
+  style="background-image: url('img/1135.jpg'); background-repeat: repeat;">
+
+  <!-- ═══════════════════════════════════════
+       HERO
+  ════════════════════════════════════════════ -->
+  <section class="relative h-screen min-h-[480px] overflow-hidden">
+    <!-- Background slideshow -->
+    <div id="hero-slideshow" class="absolute inset-0 w-full h-full bg-stone-900"></div>
+    <!-- Overlay -->
+    <div class="hero-overlay absolute inset-0"></div>
+
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-6">
+      <p class="text-xs uppercase tracking-[0.35em] text-white/70 mb-4">Mopotilantahu Adati</p>
+
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-light text-white tracking-tight leading-tight">
+        The Golden<br />
+        <span class="italic font-extralight">Covenant</span>
+      </h1>
+
+      <div class="mt-5 flex flex-col items-center gap-4 text-sm sm:text-base text-white/60 max-w-xs sm:max-w-md">
+        <i>"Adati hula-hulaa to Syara’a, Syara’a hula-hulaa to Kuru’ani"</i>
+        <span class="w-10 h-[1px] bg-white/40 block"></span>
+        <p>Mengabadikan langkah suci menuju kedewasaan dalam balutan tradisi Be'at suku Gorontalo yang luhur dan
+          bersahaja.</p>
+      </div>
+
+      <button onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})"
+        class="mt-12 flex flex-col items-center gap-2 text-white/50 hover:text-white/80 transition-colors group"
+        aria-label="Scroll to gallery">
+        <span class="text-xs tracking-widest uppercase">Lihat Dokumentasi</span>
+        <svg class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       GALLERY
+  ════════════════════════════════════════════ -->
+  <section id="gallery" class="max-w-7xl mx-auto px-3 sm:px-6 py-14 sm:py-20">
+
+    <!-- Section heading -->
+    <div class="text-center mb-10 sm:mb-14">
+      <p class="text-xs uppercase tracking-[0.3em] text-stone-400 mb-2">Gallery</p>
+      <h2 class="text-2xl sm:text-3xl font-light text-stone-700">The Collection</h2>
+    </div>
+
+    <!-- Masonry grid container -->
+    <div class="masonry" id="masonry-grid">
+      <!-- Items are injected by JS -->
+    </div>
+
+    <!-- Loading spinner -->
+    <div id="loader" class="flex justify-center items-center py-12 gap-3">
+      <div class="w-2 h-2 rounded-full bg-stone-300 animate-bounce [animation-delay:-0.3s]"></div>
+      <div class="w-2 h-2 rounded-full bg-stone-300 animate-bounce [animation-delay:-0.15s]"></div>
+      <div class="w-2 h-2 rounded-full bg-stone-300 animate-bounce"></div>
+    </div>
+
+    <!-- End message -->
+    <div id="end-msg" class="hidden text-center py-10 text-stone-400 text-sm tracking-widest uppercase"><i>"Terpahat
+        dalam tradisi, terjaga dalam janji, terpatri dalam jati diri."</i></div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════════════ -->
+  <footer class="border-t border-stone-200 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-12 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <!-- Brand -->
+      <div class="text-center sm:text-left">
+        <img src="img/logo.png" alt="Brand Logo" class="h-10 w-auto mx-auto sm:mx-0 object-contain" />
+        <p class="text-xs text-stone-400 mt-2">Photography &amp; Visual Stories</p>
+      </div>
+      <!-- Links (optional) -->
+      <div class="flex gap-6 text-xs uppercase tracking-widest text-stone-400">
+        <a href="https://www.facebook.com/krafta.visio" class="hover:text-stone-600 transition-colors">Facebook</a>
+        <a href="https://api.whatsapp.com/send?phone=6281370705753&text=Hai%20krafta!"
+          class="hover:text-stone-600 transition-colors">Whatsapp</a>
+        <a href="https://krafta-visio.github.io/homepage/" class="hover:text-stone-600 transition-colors">Homepage</a>
+      </div>
+      <!-- Copyright -->
+      <p class="text-xs text-stone-300">&copy; <span id="year"></span> krafta. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════
+       LIGHTBOX
+  ════════════════════════════════════════════ -->
+  <div id="lightbox" class="hidden fixed inset-0 z-50 bg-black/90 flex items-center justify-center" role="dialog"
+    aria-modal="true">
+    <!-- Close -->
+    <button id="lb-close" class="absolute top-4 right-5 text-white/60 hover:text-white transition-colors z-10"
+      aria-label="Close">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Prev -->
+    <button id="lb-prev" class="absolute left-3 sm:left-6 text-white/60 hover:text-white transition-colors z-10"
+      aria-label="Previous">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <!-- Image -->
+    <div class="w-full h-full flex items-center justify-center px-14 sm:px-24 py-10">
+      <img id="lb-img" src="" alt="" class="max-w-full max-h-full object-contain rounded-sm shadow-2xl select-none"
+        draggable="false" />
+    </div>
+
+    <!-- Next -->
+    <button id="lb-next" class="absolute right-3 sm:right-6 text-white/60 hover:text-white transition-colors z-10"
+      aria-label="Next">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+
+    <!-- Counter -->
+    <div id="lb-counter" class="absolute bottom-5 left-1/2 -translate-x-1/2 text-white/40 text-xs tracking-widest">
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       JAVASCRIPT
+  ════════════════════════════════════════════ -->
+  <script>
+    // ── Copyright year ──────────────────────
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ── Dummy photo data (replace with your real data) ──
+    // orientation: 'portrait' | 'landscape'
+    // Use Unsplash source for dummy photos
+    const ALL_PHOTOS = [
+      { src: 'gallery/_00_ASDC (10).jpg', orientation: 'landscape', alt: '_00_ASDC (10).jpg' },
+      { src: 'gallery/_00_ASDC (11).jpg', orientation: 'landscape', alt: '_00_ASDC (11).jpg' },
+      { src: 'gallery/_00_ASDC (112).jpg', orientation: 'landscape', alt: '_00_ASDC (112).jpg' },
+      { src: 'gallery/_00_ASDC (115).jpg', orientation: 'portrait', alt: '_00_ASDC (115).jpg' },
+      { src: 'gallery/_00_ASDC (120).jpg', orientation: 'portrait', alt: '_00_ASDC (120).jpg' },
+      { src: 'gallery/_00_ASDC (122).jpg', orientation: 'landscape', alt: '_00_ASDC (122).jpg' },
+      { src: 'gallery/_00_ASDC (125).jpg', orientation: 'landscape', alt: '_00_ASDC (125).jpg' },
+      { src: 'gallery/_00_ASDC (128).jpg', orientation: 'landscape', alt: '_00_ASDC (128).jpg' },
+      { src: 'gallery/_00_ASDC (129).jpg', orientation: 'landscape', alt: '_00_ASDC (129).jpg' },
+      { src: 'gallery/_00_ASDC (13).jpg', orientation: 'landscape', alt: '_00_ASDC (13).jpg' },
+      { src: 'gallery/_00_ASDC (131).jpg', orientation: 'landscape', alt: '_00_ASDC (131).jpg' },
+      { src: 'gallery/_00_ASDC (134).jpg', orientation: 'landscape', alt: '_00_ASDC (134).jpg' },
+      { src: 'gallery/_00_ASDC (138).jpg', orientation: 'landscape', alt: '_00_ASDC (138).jpg' },
+      { src: 'gallery/_00_ASDC (140).jpg', orientation: 'landscape', alt: '_00_ASDC (140).jpg' },
+      { src: 'gallery/_00_ASDC (143).jpg', orientation: 'landscape', alt: '_00_ASDC (143).jpg' },
+      { src: 'gallery/_00_ASDC (145).jpg', orientation: 'landscape', alt: '_00_ASDC (145).jpg' },
+      { src: 'gallery/_00_ASDC (149).jpg', orientation: 'landscape', alt: '_00_ASDC (149).jpg' },
+      { src: 'gallery/_00_ASDC (151).jpg', orientation: 'portrait', alt: '_00_ASDC (151).jpg' },
+      { src: 'gallery/_00_ASDC (152).jpg', orientation: 'landscape', alt: '_00_ASDC (152).jpg' },
+      { src: 'gallery/_00_ASDC (154).jpg', orientation: 'portrait', alt: '_00_ASDC (154).jpg' },
+      { src: 'gallery/_00_ASDC (157).jpg', orientation: 'landscape', alt: '_00_ASDC (157).jpg' },
+      { src: 'gallery/_00_ASDC (160).jpg', orientation: 'landscape', alt: '_00_ASDC (160).jpg' },
+      { src: 'gallery/_00_ASDC (164).jpg', orientation: 'portrait', alt: '_00_ASDC (164).jpg' },
+      { src: 'gallery/_00_ASDC (166).jpg', orientation: 'landscape', alt: '_00_ASDC (166).jpg' },
+      { src: 'gallery/_00_ASDC (167).jpg', orientation: 'landscape', alt: '_00_ASDC (167).jpg' },
+      { src: 'gallery/_00_ASDC (169).jpg', orientation: 'landscape', alt: '_00_ASDC (169).jpg' },
+      { src: 'gallery/_00_ASDC (17).jpg', orientation: 'portrait', alt: '_00_ASDC (17).jpg' },
+      { src: 'gallery/_00_ASDC (172).jpg', orientation: 'landscape', alt: '_00_ASDC (172).jpg' },
+      { src: 'gallery/_00_ASDC (176).jpg', orientation: 'landscape', alt: '_00_ASDC (176).jpg' },
+      { src: 'gallery/_00_ASDC (178).jpg', orientation: 'portrait', alt: '_00_ASDC (178).jpg' },
+      { src: 'gallery/_00_ASDC (180).jpg', orientation: 'portrait', alt: '_00_ASDC (180).jpg' },
+      { src: 'gallery/_00_ASDC (2).jpg', orientation: 'portrait', alt: '_00_ASDC (2).jpg' },
+      { src: 'gallery/_00_ASDC (29).jpg', orientation: 'landscape', alt: '_00_ASDC (29).jpg' },
+      { src: 'gallery/_00_ASDC (31).jpg', orientation: 'landscape', alt: '_00_ASDC (31).jpg' },
+      { src: 'gallery/_00_ASDC (36).jpg', orientation: 'landscape', alt: '_00_ASDC (36).jpg' },
+      { src: 'gallery/_00_ASDC (37).jpg', orientation: 'landscape', alt: '_00_ASDC (37).jpg' },
+      { src: 'gallery/_00_ASDC (38).jpg', orientation: 'landscape', alt: '_00_ASDC (38).jpg' },
+      { src: 'gallery/_00_ASDC (4).jpg', orientation: 'landscape', alt: '_00_ASDC (4).jpg' },
+      { src: 'gallery/_00_ASDC (46).jpg', orientation: 'landscape', alt: '_00_ASDC (46).jpg' },
+      { src: 'gallery/_00_ASDC (62).jpg', orientation: 'landscape', alt: '_00_ASDC (62).jpg' },
+      { src: 'gallery/_00_ASDC (64).jpg', orientation: 'landscape', alt: '_00_ASDC (64).jpg' },
+      { src: 'gallery/_00_ASDC (7).jpg', orientation: 'landscape', alt: '_00_ASDC (7).jpg' },
+      { src: 'gallery/_00_ASDC (79).jpg', orientation: 'portrait', alt: '_00_ASDC (79).jpg' },
+      { src: 'gallery/_00_ASDC (81).jpg', orientation: 'landscape', alt: '_00_ASDC (81).jpg' },
+      { src: 'gallery/_00_ASDC (83).jpg', orientation: 'portrait', alt: '_00_ASDC (83).jpg' },
+      { src: 'gallery/_00_ASDC (86).jpg', orientation: 'portrait', alt: '_00_ASDC (86).jpg' },
+      { src: 'gallery/_00_ASDC (91).jpg', orientation: 'portrait', alt: '_00_ASDC (91).jpg' },
+      { src: 'gallery/_00_ASDC (94).jpg', orientation: 'portrait', alt: '_00_ASDC (94).jpg' },
+    ];
+
+    // ── Infinite scroll state ────────────────
+    const BATCH_SIZE = 8;
+    let currentIndex = 0;
+    let isLoading = false;
+    let allLoaded = false;
+
+    // Semua foto yang sudah di-render (untuk lightbox)
+    let renderedPhotos = [];
+
+    const grid = document.getElementById('masonry-grid');
+    const loader = document.getElementById('loader');
+    const endMsg = document.getElementById('end-msg');
+
+    // ── Render satu batch foto ───────────────
+    function loadBatch() {
+      if (isLoading || allLoaded) return;
+      isLoading = true;
+      loader.classList.remove('hidden');
+
+      // Simulasi network delay (hapus di produksi)
+      setTimeout(() => {
+        const batch = ALL_PHOTOS.slice(currentIndex, currentIndex + BATCH_SIZE);
+
+        if (batch.length === 0) {
+          allLoaded = true;
+          loader.classList.add('hidden');
+          endMsg.classList.remove('hidden');
+          isLoading = false;
+          return;
+        }
+
+        batch.forEach((photo, batchIdx) => {
+          const globalIndex = currentIndex + batchIdx;
+          renderedPhotos.push({ ...photo, index: globalIndex });
+
+          // Wrapper
+          const item = document.createElement('div');
+          item.className = `photo-item ${photo.orientation}`;
+          item.dataset.index = globalIndex;
+
+          // Image
+          const img = document.createElement('img');
+          img.src = photo.src;
+          img.alt = photo.alt;
+          img.loading = 'lazy';
+          img.className = [
+            'w-full block rounded-sm cursor-pointer',
+            'object-cover',
+            'hover:opacity-90 transition-opacity duration-300',
+            // Aspect ratio hint agar masonry tidak reflow kasar
+            photo.orientation === 'portrait'
+              ? 'aspect-[3/4]'
+              : 'aspect-[4/3]',
+          ].join(' ');
+
+          img.addEventListener('click', () => openLightbox(globalIndex));
+
+          item.appendChild(img);
+          grid.appendChild(item);
+
+          // Trigger fade-in setelah append
+          requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+              item.classList.add('visible');
+            });
+          });
+        });
+
+        currentIndex += batch.length;
+
+        if (currentIndex >= ALL_PHOTOS.length) {
+          allLoaded = true;
+          loader.classList.add('hidden');
+          endMsg.classList.remove('hidden');
+        } else {
+          loader.classList.add('hidden');
+        }
+
+        isLoading = false;
+
+        // Periksa apakah sentinel masih terlihat di layar setelah item ditambahkan
+        if (!allLoaded) {
+          const rect = sentinel.getBoundingClientRect();
+          if (rect.top <= window.innerHeight + 300) {
+            loadBatch();
+          }
+        }
+      }, 600); // 600ms simulasi loading
+    }
+
+    // ── Intersection Observer untuk infinite scroll ──
+    const sentinel = document.createElement('div');
+    sentinel.id = 'sentinel';
+    sentinel.className = 'h-4';
+    document.getElementById('gallery').appendChild(sentinel);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) loadBatch();
+      },
+      { rootMargin: '300px' }
+    );
+    observer.observe(sentinel);
+
+    // Load batch pertama langsung
+    loadBatch();
+
+    // ══════════════════════════════════════════
+    //  LIGHTBOX
+    // ══════════════════════════════════════════
+    const lightbox = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const lbCounter = document.getElementById('lb-counter');
+    const lbClose = document.getElementById('lb-close');
+    const lbPrev = document.getElementById('lb-prev');
+    const lbNext = document.getElementById('lb-next');
+
+    let currentLbIndex = 0;
+
+    function openLightbox(index) {
+      currentLbIndex = index;
+      updateLightbox();
+      lightbox.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    function updateLightbox() {
+      const photo = renderedPhotos[currentLbIndex];
+      if (!photo) return;
+
+      // Fade swap
+      lbImg.style.opacity = '0';
+      lbImg.style.transition = 'opacity 0.25s ease';
+      setTimeout(() => {
+        lbImg.src = photo.src.replace('w=800', 'w=1400'); // minta resolusi lebih besar
+        lbImg.alt = photo.alt;
+        lbImg.onload = () => { lbImg.style.opacity = '1'; };
+        // Fallback jika sudah cache
+        if (lbImg.complete) lbImg.style.opacity = '1';
+      }, 150);
+
+      lbCounter.textContent = `${currentLbIndex + 1} / ${renderedPhotos.length}`;
+    }
+
+    function prevPhoto() {
+      if (currentLbIndex > 0) {
+        currentLbIndex--;
+        updateLightbox();
+      }
+    }
+
+    function nextPhoto() {
+      if (currentLbIndex < renderedPhotos.length - 1) {
+        currentLbIndex++;
+        updateLightbox();
+      }
+    }
+
+    // Event listeners lightbox
+    lbClose.addEventListener('click', closeLightbox);
+    lbPrev.addEventListener('click', prevPhoto);
+    lbNext.addEventListener('click', nextPhoto);
+
+    // Klik backdrop untuk tutup
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (lightbox.classList.contains('hidden')) return;
+      if (e.key === 'ArrowLeft') prevPhoto();
+      if (e.key === 'ArrowRight') nextPhoto();
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    // ── Touch / swipe support untuk lightbox ──
+    let touchStartX = 0;
+    lightbox.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].clientX;
+    }, { passive: true });
+
+    lightbox.addEventListener('touchend', (e) => {
+      const diff = touchStartX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) {
+        diff > 0 ? nextPhoto() : prevPhoto();
+      }
+    }, { passive: true });
+
+    // ── Hero Slideshow (5 Random Photos) ──
+    const heroSlideshow = document.getElementById('hero-slideshow');
+    if (heroSlideshow) {
+      // Mengambil 5 foto secara acak dari ALL_PHOTOS
+      const randomPhotos = [...ALL_PHOTOS]
+        .sort(() => 0.5 - Math.random())
+        .slice(0, 5);
+
+      const slideElements = [];
+
+      randomPhotos.forEach((photo, i) => {
+        const slideImg = document.createElement('img');
+        slideImg.src = photo.src;
+        slideImg.alt = "Slideshow Image " + (i + 1);
+        // Setup transition Tailwind: duration-1000 = 1 detik transisi halus
+        slideImg.className = 'absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ease-in-out';
+        slideImg.style.opacity = i === 0 ? '1' : '0';
+        heroSlideshow.appendChild(slideImg);
+        slideElements.push(slideImg);
+      });
+
+      let currentSlide = 0;
+      // Ganti slide setiap 1.5 detik (1500ms) sesuai permintaan
+      setInterval(() => {
+        // Hilangkan slide saat ini
+        slideElements[currentSlide].style.opacity = '0';
+        // Tentukan slide selanjutnya
+        currentSlide = (currentSlide + 1) % slideElements.length;
+        // Tampilkan slide selanjutnya
+        slideElements[currentSlide].style.opacity = '1';
+      }, 1500);
+    }
+  </script>
+</body>
+
+</html>
